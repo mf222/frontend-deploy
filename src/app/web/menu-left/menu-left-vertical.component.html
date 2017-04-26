@@ -1,0 +1,119 @@
+<nav class="cat__menu-left">
+    <div class="cat__menu-left__lock cat__menu-left__action--menu-toggle">
+        <div class="cat__menu-left__pin-button">
+            <div><!-- --></div>
+        </div>
+    </div>
+    <div class="cat__menu-left__logo">
+        <a [routerLink]="['/']">
+            <img src="assets/modules/dummy-assets/common/img/logo-inverse.png" />
+        </a>
+    </div>
+
+
+
+
+    <div class="cat__menu-left__inner">
+        <ul class="cat__menu-left__list cat__menu-left__list--root">
+
+<!--  View Perfil   -->
+
+            <li class="cat__menu-left__item" [routerLinkActive]="['cat__menu-left__item--active']">
+                <a [routerLink]="['normal/profile']">
+                    <span class="cat__menu-left__icon icmn-profile"></span>
+                    Perfil de Usuario
+                </a>
+            </li>
+
+<!--  View Buyer   -->
+
+            <li class="cat__menu-left__divider"><!-- --></li>
+            <li class="cat__menu-left__item cat__menu-left__submenu" [routerLinkActive]="['cat__menu-left__item--active']">
+                <a href="javascript: void(0);">
+                    <span class="cat__menu-left__icon icmn-download"></span>
+                    Buyer
+                </a>
+                <ul class="cat__menu-left__list">
+    
+                    <li class="cat__menu-left__item" [routerLinkActive]="['cat__menu-left__item--active']">
+                        <a [routerLink]="['buyer/products-catalog']">
+                            <span class="cat__menu-left__icon">PC</span>
+                            Catálogo de Productos
+                        </a>
+                    </li>
+                    <!--TODO: Define if we want to use the list product for the buyer (or only use the cataloge)-->
+                    <li class="cat__menu-left__item" [routerLinkActive]="['cat__menu-left__item--active']">
+                        <a [routerLink]="['buyer/products-list']">
+                            <span class="cat__menu-left__icon">PL</span>
+                            Lista de Productos
+                        </a>
+                    </li>
+
+                    <li class="cat__menu-left__item" [routerLinkActive]="['cat__menu-left__item--active']">
+                        <a [routerLink]="['buyer/orders']">
+                            <span class="cat__menu-left__icon">O</span>
+                            Mis pedidos
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item" [routerLinkActive]="['cat__menu-left__item--active']">
+                        <a [routerLink]="['buyer/cart-checkout']">
+                            <span class="cat__menu-left__icon">CC</span>
+                            Carrito
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item" [routerLinkActive]="['cat__menu-left__item--active']">
+                        <a [routerLink]="['buyer/dashboard']">
+                            <span class="cat__menu-left__icon">DB</span>
+                            Dashboard
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+<!--  View Seller   -->
+            <li class="cat__menu-left__divider"><!-- --></li>
+            <li class="cat__menu-left__item cat__menu-left__submenu" [routerLinkActive]="['cat__menu-left__item--active']">
+                <a href="javascript: void(0);">
+                    <span class="cat__menu-left__icon icmn-download"></span>
+                    Seller
+                </a>
+                <ul class="cat__menu-left__list">
+                    <li class="cat__menu-left__item" [routerLinkActive]="['cat__menu-left__item--active']">
+                        <a [routerLink]="['seller/products-catalog']">
+                            <span class="cat__menu-left__icon">PC</span>
+                            Mis productos (Catálogo)
+                        </a>
+                    </li>
+
+                    <li class="cat__menu-left__item" [routerLinkActive]="['cat__menu-left__item--active']">
+                        <a [routerLink]="['seller/products-list']">
+                            <span class="cat__menu-left__icon">PL</span>
+                            Mis productos (Lista)
+                        </a>
+                    </li>
+
+                    <li class="cat__menu-left__item" [routerLinkActive]="['cat__menu-left__item--active']">
+                        <a [routerLink]="['seller/products-add']">
+                            <span class="cat__menu-left__icon">PD</span>
+                            Añadir Producto
+                        </a>
+                    </li>
+
+                    <li class="cat__menu-left__item" [routerLinkActive]="['cat__menu-left__item--active']">
+                        <a [routerLink]="['seller/product-edit']">
+                            <span class="cat__menu-left__icon">PE</span>
+                            Editar Productos
+                        </a>
+                    </li>
+
+                   <li class="cat__menu-left__item" [routerLinkActive]="['cat__menu-left__item--active']">
+                        <a [routerLink]="['seller/dashboard']">
+                            <span class="cat__menu-left__icon">DB</span>
+                            Dashboard
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
